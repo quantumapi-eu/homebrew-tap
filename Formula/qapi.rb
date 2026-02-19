@@ -5,21 +5,21 @@
 class Qapi < Formula
   desc "QuantumAPI CLI - Quantum-safe encryption from your terminal"
   homepage "https://quantumapi.eu"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.3/qapi_1.0.3_darwin_amd64.tar.gz"
-      sha256 "19a1f8ceccf85493fab6e4ffc902f41d33afd97cb7a09f8a740648d48671902b"
+      url "https://github.com/victorZKov/mislata/releases/download/v1.0.4/qapi_1.0.4_darwin_amd64.tar.gz"
+      sha256 "0158d2d4563e3b5708c5109deda4a0def9169130bbfe5f7ad5304c8dd059a14a"
 
       def install
         bin.install "qapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.3/qapi_1.0.3_darwin_arm64.tar.gz"
-      sha256 "7346473e6b03c026d79ddd2da649c840a216b7f8d6ce01516e7f89c3461dbd42"
+      url "https://github.com/victorZKov/mislata/releases/download/v1.0.4/qapi_1.0.4_darwin_arm64.tar.gz"
+      sha256 "40e0580d928e68d3339cdfe584b8f6bf6506935977ea43ca05ed300ed23fbd10"
 
       def install
         bin.install "qapi"
@@ -29,15 +29,15 @@ class Qapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.3/qapi_1.0.3_linux_amd64.tar.gz"
-      sha256 "a810442b8bbdd5a62ba27a4b6e2c0bb2fc5c2d9f0061c95c0fac3057850126a1"
+      url "https://github.com/victorZKov/mislata/releases/download/v1.0.4/qapi_1.0.4_linux_amd64.tar.gz"
+      sha256 "9bee070e41aaa559176c45100a0b013ff3e950fd2c569010a5653fb39176aad1"
       def install
         bin.install "qapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.3/qapi_1.0.3_linux_arm64.tar.gz"
-      sha256 "4017169950962010037a73e3bc7b843febaa89325aca73084b6692b3af2bd0a1"
+      url "https://github.com/victorZKov/mislata/releases/download/v1.0.4/qapi_1.0.4_linux_arm64.tar.gz"
+      sha256 "6cc382764e7eab92a484f9547dc7ee52e8d8d1b406d8c636bcadc9ce7e13f50a"
       def install
         bin.install "qapi"
       end
