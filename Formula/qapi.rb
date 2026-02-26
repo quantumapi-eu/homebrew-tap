@@ -10,7 +10,7 @@ class Qapi < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.10/qapi_1.0.10_darwin_amd64.tar.gz"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.0.10/qapi_1.0.10_darwin_amd64.tar.gz"
       sha256 "6277cd254fbcaa6dcfd83cd36de8f80cee88c6f9ff56468980c02b4ac2cc4f51"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class Qapi < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.10/qapi_1.0.10_darwin_arm64.tar.gz"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.0.10/qapi_1.0.10_darwin_arm64.tar.gz"
       sha256 "d8f5cdd7fd4fd93ac945cd233dab9455f5d5172b98851fbc325eaaba5c2552ac"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class Qapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.10/qapi_1.0.10_linux_amd64.tar.gz"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.0.10/qapi_1.0.10_linux_amd64.tar.gz"
       sha256 "31975eb2e93d9fc7a27dc2a614f361dde45592f707e25385c10714236356cd8e"
       define_method(:install) do
         bin.install "qapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/victorZKov/mislata/releases/download/v1.0.10/qapi_1.0.10_linux_arm64.tar.gz"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.0.10/qapi_1.0.10_linux_arm64.tar.gz"
       sha256 "c3305e19b15fa496c16d91ef5ebd89d115ee3babddeafafedc0e05097bf9b0b7"
       define_method(:install) do
         bin.install "qapi"
