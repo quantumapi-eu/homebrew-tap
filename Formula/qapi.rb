@@ -5,21 +5,21 @@
 class Qapi < Formula
   desc "QuantumAPI CLI - Quantum-safe encryption from your terminal"
   homepage "https://quantumapi.eu"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.4.0/qapi_1.4.0_darwin_amd64.tar.gz"
-      sha256 "75030bfa64e91fc0a4c470b4990e8ec47b97143c105500fe54b8b69405768c7e"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.5.0/qapi_1.5.0_darwin_amd64.tar.gz"
+      sha256 "3a5fea394726a907326c9a752c5992482e2ea9f824855e2babf173a462a297b6"
 
       define_method(:install) do
         bin.install "qapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.4.0/qapi_1.4.0_darwin_arm64.tar.gz"
-      sha256 "036ef2e184ac414acd76a96ea4a1e63af06b194d117f2f05657395673f8ca3f2"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.5.0/qapi_1.5.0_darwin_arm64.tar.gz"
+      sha256 "10fdba074a4ee7f1dc4f77524484d65a737b22c954ee831f459b4c7b7d7346d4"
 
       define_method(:install) do
         bin.install "qapi"
@@ -29,15 +29,15 @@ class Qapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.4.0/qapi_1.4.0_linux_amd64.tar.gz"
-      sha256 "278a69db8ba0832ae815d818efee1c1813ea9c6f9b9cac82a761fc3430e17af5"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.5.0/qapi_1.5.0_linux_amd64.tar.gz"
+      sha256 "307c89bc4248a69cf2595635c2142e12a72553608af6f101bbf5930b25d9a2d4"
       define_method(:install) do
         bin.install "qapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.4.0/qapi_1.4.0_linux_arm64.tar.gz"
-      sha256 "b045abc65851040c60b25b481d26f5c3fd3e767ee07167fc978d5a71ef99fd93"
+      url "https://github.com/quantumapi-eu/qapi-cli/releases/download/v1.5.0/qapi_1.5.0_linux_arm64.tar.gz"
+      sha256 "e6540f1cacafc76221323c451062ec9c69ff96af6a598882dc93a6c75a0129cb"
       define_method(:install) do
         bin.install "qapi"
       end
